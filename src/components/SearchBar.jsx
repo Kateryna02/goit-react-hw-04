@@ -13,6 +13,7 @@ const SearchBar = ({ onSubmit }) => {
             return;
         }
         onSubmit(query);
+        setQuery('');
     };
 
     return (
@@ -20,7 +21,7 @@ const SearchBar = ({ onSubmit }) => {
             <form onSubmit={handleSubmit} className={s.searchForm}>
                 <input
                     type="text"
-                    value={query}
+                    value={query} 
                     onChange={(e) => setQuery(e.target.value)}
                     autoComplete="off"
                     autoFocus

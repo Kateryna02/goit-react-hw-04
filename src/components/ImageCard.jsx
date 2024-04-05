@@ -11,7 +11,6 @@ const ImageCard = ({ image, openModal }) => {
   return (
     <div className={s.card}>
       <img src={image.urls.small} alt={image.alt_description} onClick={handleClick} className={ s.cartItem} />
-      <div className={s.title}>{image.alt_description}</div>
     </div>
   );
 };
