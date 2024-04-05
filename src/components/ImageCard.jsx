@@ -15,7 +15,6 @@ const ImageCard = ({ image, openModal }) => {
     </div>
   );
 };
-
 export default ImageCard;
 
 
